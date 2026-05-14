@@ -32,6 +32,7 @@ public class Darstellung
         panel2.setLayout(new GridLayout(0, 1));
 
         /* übrige Objekte initialisieren */
+        // TEST
 
         /* Hierarchie herstellen */
 
