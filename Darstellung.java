@@ -33,10 +33,25 @@ public class Darstellung
 
         /* übrige Objekte initialisieren */
         // TODO
+        feedbackLabel = new JLabel();
+        feedbackLabel.setOpaque(true);
+        
+        ergebnisField = new JTextField();
+        ergebnisField.addActionListener(steuerung);
 
         /* Hierarchie herstellen */
 
         frame.pack();
         frame.setVisible(true);
+    }
+    
+    void textfeldLeeren()
+    {
+        ergebnisField.setText("");
+    }
+    
+    void feedbackFarbeSetzen(Color farbe)
+    {
+        feedbackLabel.setBackground(farbe);
     }
 }
